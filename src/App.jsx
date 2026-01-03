@@ -3,6 +3,8 @@ import Landing from "./pages/Landing/Landing";
 import Marketplace from "./pages/Marketplace/Marketplace";
 import UploadMaterial from "./pages/UploadMaterial/UploadMaterial";
 import Impact from "./pages/Impact/Impact";
+import Auth from "./pages/Auth/Auth";
+
 
 
 
@@ -16,6 +18,8 @@ function App() {
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/upload" element={<UploadMaterial />} />
         <Route path="/impact" element={<Impact />} />
+        <Route path="/auth" element={<Auth />} />
+
       </Routes>
     </BrowserRouter>
   );
