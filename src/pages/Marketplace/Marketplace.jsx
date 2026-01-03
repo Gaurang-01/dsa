@@ -1,31 +1,11 @@
+import { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import { MaterialContext } from "../../context/MaterialContext";
 import "./Marketplace.css";
 
-const materials = [
-  {
-    id: 1,
-    name: "Aluminium Scrap",
-    category: "Metal",
-    quantity: "5 kg",
-    location: "Mechanical Lab",
-  },
-  {
-    id: 2,
-    name: "Plastic Containers",
-    category: "Plastic",
-    quantity: "20 units",
-    location: "Chemistry Lab",
-  },
-  {
-    id: 3,
-    name: "Old Circuit Boards",
-    category: "Electronics",
-    quantity: "12 pcs",
-    location: "Electronics Lab",
-  },
-];
-
 function Marketplace() {
+  const { materials } = useContext(MaterialContext);
+
   return (
     <>
       <Navbar />
@@ -55,7 +35,9 @@ function Marketplace() {
                 <strong>Location:</strong> {item.location}
               </p>
 
-              <button className="request-btn">Request Material</button>
+              <button className="request-btn">
+                Request Material
+              </button>
             </div>
           ))}
         </div>
