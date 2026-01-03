@@ -7,7 +7,7 @@ function Landing() {
       <Navbar />
       <section className="hero">
         <h1>
-          Yash Campus Waste into <span>Innovation</span>
+          Yash Campus Waste yash  into <span>Innovation</span>
         </h1>
         <p>
           A hyper-local platform connecting labs, industries, and students
