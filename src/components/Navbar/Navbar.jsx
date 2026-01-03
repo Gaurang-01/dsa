@@ -1,13 +1,42 @@
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="nav-logo">UpCycle Connect</div>
+      {/* LOGO / BRAND */}
+      <div className="nav-logo">
+        <NavLink to="/">UpCycle Connect</NavLink>
+      </div>
+
+      {/* NAV LINKS */}
       <div className="nav-links">
-        <a href="#">Marketplace</a>
-        <a href="#">Upload</a>
-        <a href="#">Impact</a>
+        <NavLink
+          to="/marketplace"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Marketplace
+        </NavLink>
+
+        <NavLink
+          to="/upload"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Upload
+        </NavLink>
+
+        <NavLink
+          to="/impact"
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+        >
+          Impact
+        </NavLink>
       </div>
     </nav>
   );
