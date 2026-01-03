@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./Landing.css";
 import recycle from "../../assets/recycle-logo.jpg"
-
+import innovation from "../../assets/kid-innovation.jpeg"
 function Landing() {
   return (
     <>
@@ -151,7 +151,7 @@ function Landing() {
 
           <div className="impact-card">
             <img
-              src="https://illustrations.popsy.co/green/innovation.svg"
+              src={innovation}
               alt="Innovation"
             />
             <h3>Innovation Enablement</h3>

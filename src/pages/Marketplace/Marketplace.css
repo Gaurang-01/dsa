@@ -65,3 +65,27 @@
 .request-btn:hover {
   background: #166534;
 }
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.filter-bar input {
+  flex: 1;
+}
+
+/* NO RESULTS */
+.no-results {
+  margin-top: 20px;
+  color: #6b7280;
+}
